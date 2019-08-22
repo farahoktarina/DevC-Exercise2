@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Exercise 2</title>
-</head>
-<body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
-</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HSDC Batch 30 | Farah</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <!-- Header -->
+        <div id="header" class="container-fluid bg-pink shadow-bottom">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center pt-3 pb-3">
+                    <h4 class="text-white">CALCULATOR</h4>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Section -->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 m-auto">
+                    <div class="card-panel shadow-sm card-height">
+                        <form action="" name="formCalculator">
+                            <table class="table text-center">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">
+                                            <input type="text" name="result" class="form-control" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" class="btn btn-secondary" value="1" onclick="calculator('1')"></td>
+                                        <td><input type="button" class="btn btn-secondary" value="2" onclick="calculator('2')"></td>
+                                        <td><input type="button" class="btn btn-secondary" value="3" onclick="calculator('3')"></td>
+                                        <td><input type="button" class="btn bg-pink text-white" value="+" onclick="calculator(' + ')"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" class="btn btn-secondary" value="4" onclick="calculator('4')"></td>
+                                        <td><input type="button" class="btn btn-secondary" value="5" onclick="calculator('5')"></td>
+                                        <td><input type="button" class="btn btn-secondary" value="6" onclick="calculator('6')"></td>
+                                        <td><input type="button" class="btn bg-pink text-white" value="-" onclick="calculator(' - ')"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" class="btn btn-secondary" value="7" onclick="calculator('7')"></td>
+                                        <td><input type="button" class="btn btn-secondary" value="8" onclick="calculator('8')"></td>
+                                        <td><input type="button" class="btn btn-secondary" value="9" onclick="calculator('9')"></td>
+                                        <td><input type="button" class="btn bg-pink text-white" value="*" onclick="calculator(' * ')"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" class="btn btn-success" value="c" onclick="calculator(' c ')"></td>
+                                        <td><input type="button" class="btn bg-secondary text-white" value="0" onclick="calculator('0')"></td>
+                                        <td><input type="button" class="btn bg-pink text-white" value="=" onclick="calculator(' = ')"></td>
+                                        <td><input type="button" class="btn bg-pink text-white" value="/" onclick="calculator(' / ')"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Section -->
+        <!-- Footer -->
+            <div id="footer">
+                <div class="container-fluid mt-3">
+                    <div class="row bg-pink">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <p class="text-white pt-3">Follow Me! ^^</p>
+                            <div class="social-media pb-3">
+                                <div class="socmed">
+                                    <a href="https://github.com/farahoktarina" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="socmed">
+                                    <a href="https://medium.com/@farahoktarina" target="_blank">
+                                        <i class="fa fa-medium"></i>
+                                    </a>
+                                </div>
+                                <div class="socmed">
+                                    <a href="https://www.instagram.com/farahoktarina/" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="socmed">
+                                    <a href="https://www.facebook.com/farahoktarina" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="socmed">
+                                    <a href="https://twitter.com/farahoktarina" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-white text-center pt-1">Develop with <i class="fa fa-heart"></i> by <a href="https://linkedin.com/in/farah-oktarina/" target="_blank" class="linkedin">Farah Oktarina</a>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Footer -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="calculator.js"></script>
+    </body>
 </html>
